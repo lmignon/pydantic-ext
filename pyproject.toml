@@ -18,12 +18,14 @@ dependencies = [
     "pydantic>=2.0.2",
     "wrapt",
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.9"
 
 [project.optional-dependencies]
 test = [
     "pytest",
     "coverage[toml]",
+    "fastapi>=0.111",
+    "httpx",
 ]
 mypy = [
     "mypy>=1.4.1",
